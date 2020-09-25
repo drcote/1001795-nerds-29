@@ -115,6 +115,10 @@ a {
 }
 
 .nav__item--active {
+  font-weight: 500;
+  line-height: 1.87;
+  text-transform: uppercase;
+  color: var(--color-title);
   border-bottom: 2px solid var(--color-primary);
 }
 /* Карусель */
@@ -266,4 +270,59 @@ a {
 /* Социальные кнопки */
 .social__list {
   list-style: none;
+}
+
+/* Магазин */
+.shop__title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+/* Раздел поиска */
+
+
+/* Сортировка */
+.sort__title {
+  font-size: 18px;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.sort__list {
+  list-style: none;
+}
+
+.sort__item {
+  font-size: 14px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.sort__item--active {
+  opacity: 1;
+}
+
+/* Пагинация */
+.pagination {
+  list-style: none;
+}
+
+.pagination__page {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+}
+
+.pagination__page--active {
+  opacity: 0.1;
+}
+
+.pagination__more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
 }
