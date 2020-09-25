@@ -26,13 +26,23 @@
 }
 
 :root {
-  --color-text: #000000;
+  --color-title: #000000;
+  --color-text: #283136;
+  --color-button-text: #ffffff;
+  --color-primary: #FB565A;
+  --color-apps: #00CA74;
+  --color-presentation: #EFC849;
+  --color-addres: #666666;
+  --color-discount: #444444;
+  --social-icon: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
-  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-title);
 }
 
 img {
@@ -54,4 +64,113 @@ a {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.nav__item {
+  font-weight: 500;
+  line-height: 1.87;
+  text-transform: uppercase;
+}
+
+.nav__item a {
+  color: var(--color-title);
+}
+
+.slider__title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1;
+}
+
+.slider__subtitle {
+  color: var(--color-text);
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.services__text {
+
+  color: var(--color-text);
+}
+
+.services__button--apps {
+  background-color: var(--color-apps);
+}
+
+.services__button--present {
+  background-color: var(--color-presentation);
+}
+
+.about-us__title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.about-us__text {
+  color: var(--color-text);
+}
+
+.about-us__job-title {
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+.about-us__job {
+  color: var(--color-text);
+}
+
+.statistics__text {
+  font-weight: 700;
+}
+
+.statistics__rate {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.4;
+}
+
+.statistics__description {
+  line-height: 1.125;
+  color: var(--color-text);
+}
+
+.address__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+.address__street {
+  line-height: 1.125;
+  color: var(--color-addres);
+}
+
+.address__tel {
+  line-height: 1.125;
+  color: var(--color-addres);
+}
+
+.footer__tagline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.footer__discount {
+  line-height: 1.375;
+  color: var(--color-discount);
 }
