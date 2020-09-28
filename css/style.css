@@ -26,6 +26,7 @@
 }
 
 :root {
+  --color-header: #eeeeee;
   --color-title: #000000;
   --color-text: #283136;
   --color-button-text: #ffffff;
@@ -45,12 +46,20 @@
 
 /* Глобальные классы */
 
-body {
+.page {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-title);
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 img {
@@ -92,6 +101,17 @@ a {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.header__wrapper,
+.main-page {
+  width: 1160px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header, .header__wrapper {
+  background-color: var(--color-header);
+}
+
 /* Меню навигации */
 
 .nav__list {
@@ -121,6 +141,7 @@ a {
   color: var(--color-title);
   border-bottom: 2px solid var(--color-primary);
 }
+
 /* Карусель */
 .slider__title {
   font-weight: 500;
@@ -132,18 +153,13 @@ a {
   color: var(--color-text);
 }
 
-/* .slider__button:hover {
-  background-color: var(--color-button-hover);
-}
-
-.slider__button:active {
-  background-color: var(--color-button-active);
-  opacity: 0.3;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); */
-}
 /* Услуги */
 .services__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .services__title {
@@ -192,6 +208,7 @@ a {
   background-color: var(--color-presentation-active);
   opacity: 0.3;
 }
+
 /* О компании */
 .about-us__job-list {
   list-style: none;
@@ -215,8 +232,9 @@ a {
 .about-us__job {
   color: var(--color-text);
 }
+
 /* Статистика */
-.statistics__list{
+.statistics__list {
   list-style: none;
 }
 
@@ -267,6 +285,7 @@ a {
   line-height: 1.375;
   color: var(--color-discount);
 }
+
 /* Социальные кнопки */
 .social__list {
   list-style: none;
