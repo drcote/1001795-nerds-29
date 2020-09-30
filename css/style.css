@@ -368,6 +368,13 @@ a {
   font-size: 55px;
   line-height: 1;
   opacity: 0.5;
+  margin: 0;
+  text-align: center;
+}
+
+.shop__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 /* Раздел поиска */
@@ -382,6 +389,8 @@ a {
 
 .sort__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sort__item {
@@ -423,5 +432,6 @@ a {
   height: 416px;
   background-image: url('../img/map.jpg');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
-
