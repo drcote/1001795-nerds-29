@@ -387,10 +387,16 @@ a {
   text-transform: uppercase;
 }
 
+.sort__list-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .sort__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .sort__item {
