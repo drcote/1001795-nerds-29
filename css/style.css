@@ -130,6 +130,7 @@ a {
 .header__wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
+  padding-top: 49px;
 }
 
 /* Меню навигации */
@@ -146,6 +147,7 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-left: 202px;
 }
 
 .nav__item {
@@ -153,6 +155,7 @@ a {
   line-height: 1.87;
   text-transform: uppercase;
   color: var(--color-title);
+  margin-right: 45px;
 }
 
 .nav__item:hover {
@@ -170,6 +173,23 @@ a {
   text-transform: uppercase;
   color: var(--color-title);
   border-bottom: 2px solid var(--color-primary);
+}
+
+/* Карзина пользователя */
+.shop__nav {
+  font-weight: 500;
+  line-height: 1.87;
+  text-transform: uppercase;
+  color: var(--color-title);
+}
+
+.shop__nav:hover {
+  color: var(--color-primary);
+}
+
+.shop__nav:active {
+  color: var(--color-title);
+  opacity: 0.3;
 }
 
 /* Карусель */
@@ -365,6 +385,13 @@ a {
 }
 
 /* Предложения */
+.offer {
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .footer__tagline {
   display: block;
   font-weight: 700;
@@ -431,6 +458,7 @@ a {
   opacity: 0.5;
   margin: 0;
   text-align: center;
+  padding-bottom: 104px;
 }
 
 .shop__wrapper {
@@ -482,8 +510,8 @@ a {
   margin-right: 40px;
   margin-bottom: 30px;
   background-color: var(--color-site-header);
-  padding-top: 40px;
   border-radius: 5px;
+  line-height: 0;
 }
 
 .site:nth-child(2n) {
@@ -491,7 +519,6 @@ a {
 }
 
 .site:hover {
-  border-radius: 5px;
   box-shadow: var(--shadow-site);
   background-color: var(--color-site-background);
 }
@@ -500,13 +527,36 @@ a {
   display: block;
 }
 
-/* .site__circle {
+.site__circle {
+  display: block;
   width: 14px;
   height: 14px;
-border: 20px solid;
   border-radius: 50%;
   background-color: var(--color-white);
-} */
+  margin: 13px 0 13px 16px;
+}
+
+.site__circle::before,
+.site__circle::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  margin: 13px 0;
+}
+
+.site__circle::before {
+  left: 39px;
+}
+
+.site__circle::after {
+  left: 62px;
+}
+
 
 .site__site-desc {
   display: none;
@@ -566,7 +616,6 @@ border: 20px solid;
 }
 
 .pagination__page--active {
-  opacity: 0.1;
   border: 3px solid var(--color-pagination-border);
   background-color: var(--color-white);
 }
